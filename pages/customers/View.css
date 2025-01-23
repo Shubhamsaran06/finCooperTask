@@ -1,0 +1,97 @@
+/* General Layout */
+.view-customer-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, rgba(30, 64, 175, 0.4), rgba(20, 184, 166, 0.4)); /* Transparent gradient background */
+    min-height: 100vh;
+  }
+  
+  .customer-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .customer-info {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background for info box */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .customer-info div {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .buttons-container {
+    text-align: center;
+  }
+  
+  .edit-button,
+  .delete-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  .edit-button {
+    background-color: #2563eb; /* Blue for edit */
+    color: white;
+  }
+  
+  .edit-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .delete-button {
+    background-color: #f44336; /* Red for delete */
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f;
+  }
+
+  /* Back Button Styling */
+.back-button {
+    background-color: #4CAF50; /* Green background for the back button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .view-customer-container {
+      padding: 10px;
+    }
+  
+    .edit-button,
+    .delete-button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .customer-info {
+      padding: 15px;
+    }
+  }
+  

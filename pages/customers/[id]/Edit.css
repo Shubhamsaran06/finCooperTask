@@ -1,0 +1,227 @@
+/* General Layout */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #5a7df1, #7bf6e8); 
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 1s ease-in-out;
+  padding: 20px; 
+}
+
+
+.form-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
+  padding: 40px;
+  max-width: 450px;
+  width: 100%;
+  animation: slideIn 0.8s ease-out;
+  margin: 0 auto; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-card {
+    padding: 20px; 
+    max-width: 90%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .form-card {
+    padding: 15px; 
+    max-width: 95%; 
+  }
+}
+
+/* Heading */
+.form-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #151010;
+  margin-bottom: 1.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  animation: slideIn 0.8s ease-out;
+}
+
+/* Form Layout */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Label Styling */
+.form-label {
+  text-align: left;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Input Fields */
+.input-field,
+.textarea-field {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 90%;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-label {
+    font-size: 0.95rem; 
+  }
+
+  .input-field,
+  .textarea-field {
+    padding: 12px; 
+    font-size: 0.95rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .form-label {
+    font-size: 0.9rem; /* Further reduce font size for very small screens */
+  }
+
+  .input-field,
+  .textarea-field {
+    padding: 10px; /* Further reduce padding for very small screens */
+    font-size: 0.9rem; /* Further reduce font size for input fields */
+  }
+}
+
+.input-field:focus,
+.textarea-field:focus {
+  border-color: #2563eb; /* Blue border when focused */
+  outline: none;
+  box-shadow: 0 0 12px rgba(38, 99, 235, 0.4); /* Subtle glow effect */
+}
+
+.input-field.error,
+.textarea-field.error {
+  border-color: #f44336; /* Red border for error */
+  box-shadow: 0 0 12px rgba(244, 67, 54, 0.4); /* Red glow effect */
+}
+
+/* Error Message */
+.error-message {
+  color: #f44336;
+  font-size: 0.875rem;
+  margin-top: 4px;
+  text-align: left;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #2563eb; /* Blue color */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow on button */
+}
+
+.submit-btn:hover {
+  background-color: #1d4ed8; /* Darker blue on hover */
+  transform: scale(1.05); /* Slight grow effect */
+}
+
+.submit-btn:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(38, 99, 235, 0.6); /* Glow effect on focus */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-card {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .form-heading {
+    font-size: 2rem;
+  }
+
+  .input-field,
+  .textarea-field {
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .submit-btn {
+    padding: 12px 20px;
+  }
+
+  .form-label {
+    font-size: 0.95rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Additional Enhancements */
+.form-card {
+  transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.form-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.input-field::placeholder,
+.textarea-field::placeholder {
+  color: #aaa; /* Placeholder color */
+  opacity: 1; /* Ensures placeholder is visible */
+}
+
+.input-field.error::placeholder,
+.textarea-field.error::placeholder {
+  color: #f44336; /* Placeholder color for error state */
+}
+
+
+
+
+/* Back Button Styling */
+.back-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.back-btn:hover {
+  background-color: #0056b3;
+}
